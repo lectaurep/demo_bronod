@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"  standalone="yes"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+	<Creator>escriptorium</Creator>
+	<Created>2021-10-13T20:43:17.014317+00:00</Created>
+        <LastChange>2021-10-13T20:43:17.014345+00:00</LastChange>
+
+  </Metadata>
+  <Page imageFilename="0095.jpg" imageWidth="5680" imageHeight="4180">
+
+    
+
+    
+    <TextRegion id="eSc_dummyblock_">
+    
+    
+      <TextLine id="eSc_line_599c225e" >
+        <Coords points="3331,1755 3334,1633 3571,1633 3683,1564 3798,1525 3847,1525 3913,1560 3972,1543 4035,1550 4052,1567 4097,1536 4195,1591 4268,1550 4282,1564 4300,1550 4345,1560 4404,1539 4442,1557 4512,1539 4547,1439 4607,1394 4634,1388 4704,1546 4749,1574 4822,1550 4822,1779 4690,1779 4662,1807 4631,1800 4613,1818 4519,1790 4467,1811 4425,1790 4383,1821 4310,1821 4275,1797 4226,1804 4212,1790 4160,1790 4129,1811 4084,1797 4031,1821 3972,1821 3923,1790 3874,1811 3847,1797 3798,1825 3732,1825 3693,1804 3665,1818 3592,1797 3540,1804 3519,1825 3488,1811 3428,1818 3387,1793 3334,1814"/>
+        <Baseline points="3332,1756 3483,1756 3580,1756 3604,1751 3662,1751 3711,1746 3832,1746 3885,1746 3924,1736 3973,1732 4021,1732 4055,1722 4108,1722 4210,1717 4356,1717 4836,1717"/>
+        <TextEquiv>
+          <Unicode>ANNÉE</Unicode>
+        </TextEquiv>
+      </TextLine>
+
+    
+    
+      <TextLine id="eSc_line_e4f5d63c" >
+        <Coords points="3787,2250 3787,2117 3826,2110 3864,2065 3965,2058 3986,2072 4143,2055 4209,2086 4237,2065 4265,2069 4307,2100 4376,2051 4435,2065 4463,2093 4544,2090 4550,2257 4439,2260 4359,2333 4254,2337 4219,2323 4136,2344 4090,2299 4073,2312 4003,2299 3951,2347 3885,2302 3798,2302"/>
+        <Baseline points="3788,2251 3822,2251 4007,2246 4079,2236 4244,2236 4356,2231 4467,2222 4477,2217 4526,2217 4560,2212"/>
+        <TextEquiv>
+          <Unicode>1745</Unicode>
+        </TextEquiv>
+      </TextLine>
+
+    
+    </TextRegion>
+    
+  </Page>
+</PcGts>
