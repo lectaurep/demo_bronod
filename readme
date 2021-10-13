@@ -1,42 +1,43 @@
-# Entraînement de demo pour LECTAUREP
+# Training demonstration for LECTAUREP
 
-Création d'un modèle de transcription pour les écrits du notaire Bronod.
+Creating transcription models for documents written by Maître Bronod.
 
-## Données
+## Data
 
 ### Train set
 
-90 images transcrites à la main. 
-Issues de https://traces6.paris.inria.fr/document/317/images/
-
-images 1 à 90.
+- 90 images, manually transcribed by Marie-Françoise Limon-Bonnet.
+- In [escriptorium.inria.fr/document/317/images/](https://escriptorium.inria.fr/document/317/images/), images 1 to 90, included.
 
 ### Test set
 
-9 images transcrites à la main.
-Issues de https://traces6.paris.inria.fr/document/317/images/
+- 9 images, manually transcribed by Marie-Françoise Limon-Bonnet.
+- In [escriptorium.inria.fr/document/317/images/](https://escriptorium.inria.fr/document/317/images/), images 91 to 99, included.
 
-images 91 à 99.
+### Evaluation set
 
-### Eval set
+- 1 image, manually transcribed by Marie-Françoise Limon-Bonnet.
+- In [escriptorium.inria.fr/document/317/images/](https://escriptorium.inria.fr/document/317/images/), images 100.
 
-1 image transcrite à la main.
-Issue de https://traces6.paris.inria.fr/document/317/images/
+Evaluation with [KaMI](https://kami-app.herokuapp.com/)
 
-image 100.
+## Training
 
-Cette transcription sert à l'évaluation à l'aide de KaMI.
+Models were trained with kraken version 3.0b25
 
-## Entraînement
+### Model trained from scratch (fs)
 
-Réalisés à l'aide kraken version 3_0b25
+Training lasted for about 1h30.
 
-### From scratch
-Temps d'entraînement : environ 1h30
+Cmd:
 
 ```
 $ ketos train -o demobronod_fs_nfd -f page -t trainset.list --device cuda:1 --augment --threads 64 -u NFD -s '[1,120,0,1 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 S1(1x0)1,3 Lbx200 Do0.1,2 Lbx200 Do.1,2 Lbx200 Do]' -r 0.0001
+```
 
+Output:
+
+```
 [11.2333] Region eSc_dummyblock_ without coordinates 
 [11.2929] Region eSc_dummyblock_ without coordinates 
 [11.2956] Region eSc_dummyblock_ without coordinates 
@@ -164,14 +165,20 @@ stage 17/∞  [####################################]  3049/3049          Accurac
 Moving best model demobronod_fs_nfd_12.mlmodel (0.287779673871824) to demobronod_fs_nfd_best.mlmodel
 ```
 
-### From Generic_lectau_26
+### Model trained by finetuning generic_lectau_26.mlmodel (ft)
 
-Le modèle affiné se trouve ici : https://gitlab.inria.fr/dh-projects/kraken-models/-/raw/master/transcription%20models/generic_lectaurep_26.mlmodel
+The initial model can be found here : [https://gitlab.inria.fr/dh-projects/kraken-models/master/transcription-models/generic_lectaurep_26.mlmodel](https://gitlab.inria.fr/dh-projects/kraken-models/-/raw/master/transcription%20models/generic_lectaurep_26.mlmodel)
 
-Temps d'entraînement : environ 1h30
+Training also lasted for about 1h30.
 
+
+Cmd: 
 ```
 $ ketos train -o demobronod_ft_nfd --load generic_lectaurep_26.mlmodel --resize add -f page -t trainset.list --device cuda:0 --augment --threads 64 -u NFD -s '[1,120,0,1 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 S1(1x0)1,3 Lbx200 Do0.1,2 Lbx200 Do.1,2 Lbx200 Do]' -r 0.0001
+```
+
+Output:
+```
 Loading existing model from generic_lectaurep_26.mlmodel ✓[2.7728] Region eSc_dummyblock_ without coordinates 
 [2.7796] Region eSc_dummyblock_ without coordinates 
 [2.7823] Region eSc_dummyblock_ without coordinates 
@@ -305,4 +312,14 @@ Moving best model demobronod_ft_nfd_16.mlmodel (0.9610502610297881) to demobrono
 
 ## Evaluations
 
-Réalisées avec kraken v3.0.5 (car cmd ketos test de kraken v3.0b25 ne marchait pas) 
+Best models are evaluated with `ketos test` in kraken version 3.0.5 (because `ketos test` failed to load images in version 3.0b25)
+
+Resulting evaluations can be found in :
+
+- MODEL FROM SCRATCH
+	- [eval_demobronod_fs.txt](./eval_demobronod_fs.txt): evaluation of demobronod_fs_nfd_best.mlmodel
+	- [eval_demobronod_fs_nonfd.txt](./eval_demobronod_fs_nonfd.txt): evaluation of demobronod_fs_nfd_best.mlmodel without implementing NFD normalization
+- FINETUNED MODELS
+	- [eval_demobronod_ft.txt](./eval_demobronod_ft.txt): evaluation of demobronod_ft_nfd_best.mlmodel
+	- [eval_demobronod_ft_nonfd.txt](./eval_demobronod_ft_nonfd.txt):: evaluation of demobronod_ft_nfd_best.mlmodel without implementing NFD normalization
+
