@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"  standalone="yes"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+  <Metadata>
+	<Creator>escriptorium</Creator>
+	<Created>2021-10-13T20:37:22.308028+00:00</Created>
+        <LastChange>2021-10-13T20:37:22.308055+00:00</LastChange>
+
+  </Metadata>
+  <Page imageFilename="0002.jpg" imageWidth="5680" imageHeight="4180">
+
+    
+
+    
+    <TextRegion id="eSc_dummyblock_">
+    
+    
+      <TextLine id="eSc_line_51e8c788" >
+        <Coords points="3481,1759 3484,1612 3700,1609 3777,1560 3826,1574 3881,1536 4212,1557 4268,1595 4369,1539 4442,1536 4523,1560 4673,1412 4736,1443 4700,1560 4780,1525 4843,1529 4868,1546 4875,1804 4721,1786 4697,1804 4519,1811 4495,1786 4446,1783 4408,1814 4307,1793 4209,1811 4178,1793 4042,1790 3996,1793 3951,1821 3892,1804 3812,1814 3794,1797 3676,1797 3627,1825 3578,1811 3547,1828 3488,1821"/>
+        <Baseline points="3482,1760 3486,1760 3497,1760 3531,1760 3634,1760 3783,1760 3950,1768 4171,1768 4274,1768 4495,1745 4648,1745 4842,1745 4884,1741"/>
+        <TextEquiv>
+          <Unicode>ANNÉE</Unicode>
+        </TextEquiv>
+      </TextLine>
+
+    
+    
+      <TextLine id="eSc_line_9b6c1c81" >
+        <Coords points="3833,2250 3833,2090 3920,2048 3969,2058 3993,2044 4139,2041 4185,2072 4244,2076 4265,2055 4348,2062 4369,2041 4418,2030 4453,2055 4488,2048 4519,2079 4606,2079 4620,2243 4596,2288 4512,2278 4488,2295 4373,2292 4327,2305 4174,2292 4129,2302 4111,2288 4045,2309 4003,2292 3982,2312 3927,2292 3840,2292"/>
+        <Baseline points="3836,2251 3840,2251 3878,2255 4027,2259 4320,2244 4408,2244 4621,2244"/>
+        <TextEquiv>
+          <Unicode>1742</Unicode>
+        </TextEquiv>
+      </TextLine>
+
+    
+    </TextRegion>
+    
+  </Page>
+</PcGts>
