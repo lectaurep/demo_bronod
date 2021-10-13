@@ -1,0 +1,232 @@
+Loading model demobronod_ft_nfd_best.mlmodel	✓
+Evaluating demobronod_ft_nfd_best.mlmodel
+Evaluating
+=== report  ===
+
+14173	Characters
+871	Errors
+93.85%	Accuracy
+
+218	Insertions
+257	Deletions
+396	Substitutions
+
+Count	Missed	%Right
+4911	121	97.54%	Common
+9262	493	94.68%	Latin
+
+Errors	Correct-Generated
+79	{  } - { COMBINING GRAVE ACCENT }
+72	{ à } - { a }
+48	{ é } - { e }
+45	{ . } - {  }
+45	{  } - { . }
+41	{  } - { COMBINING ACUTE ACCENT }
+28	{ SPACE } - {  }
+21	{  } - { SPACE }
+21	{ r } - {  }
+19	{  } - { COMBINING CIRCUMFLEX ACCENT }
+16	{  } - { COMBINING CEDILLA }
+13	{ ç } - { c }
+13	{ l } - {  }
+12	{ e } - {  }
+11	{ t } - { l }
+9	{ ô } - { o }
+9	{ c } - {  }
+8	{ a } - {  }
+8	{ t } - {  }
+7	{ ê } - { e }
+7	{ a } - { o }
+7	{ n } - {  }
+6	{  } - { r }
+6	{  } - { e }
+6	{ s } - {  }
+6	{ o } - {  }
+6	{ ^ } - {  }
+6	{ SPACE } - { &#39; }
+5	{ d } - {  }
+5	{ e } - { a }
+5	{ i } - {  }
+5	{ g } - {  }
+5	{ a } - { A }
+5	{ r } - { e }
+5	{ 5 } - { 3 }
+4	{  } - { i }
+4	{ C } - {  }
+4	{ v } - { V }
+4	{ s } - { S }
+4	{ s } - { e }
+4	{ M } - { m }
+4	{ è } - { e }
+4	{ l } - { r }
+3	{  } - { d }
+3	{  } - { n }
+3	{ SPACE } - { . }
+3	{ t } - { c }
+3	{ m } - { n }
+3	{ m } - {  }
+3	{ S } - {  }
+3	{ a } - { u }
+3	{ T } - { C }
+3	{ S } - { s }
+3	{ u } - {  }
+3	{ i } - { r }
+3	{ 5 } - { 4 }
+3	{ g } - { G }
+3	{ L } - {  }
+3	{ c } - { C }
+3	{ c } - { s }
+2	{ e } - { i }
+2	{ m } - { M }
+2	{ v } - { s }
+2	{ i } - { e }
+2	{ a } - { l }
+2	{ z } - { r }
+2	{ c } - { i }
+2	{ u } - { n }
+2	{ . } - { e }
+2	{ e } - { o }
+2	{ g } - { q }
+2	{ l } - { t }
+2	{ ^ } - { . }
+2	{ X } - {  }
+2	{ u } - { e }
+2	{ D } - { d }
+2	{ u } - { a }
+2	{ S } - { F }
+2	{ &#39; } - {  }
+2	{ C } - { f }
+2	{  } - { s }
+2	{ l } - { L }
+2	{  } - { &#39; }
+2	{  } - { COMBINING TILDE }
+2	{ r } - { n }
+2	{ y } - {  }
+1	{ N } - { F }
+1	{  } - { a }
+1	{ . } - { SPACE }
+1	{ SPACE } - { A }
+1	{ x } - { a }
+1	{ a } - { e }
+1	{ é } - { i }
+1	{ 7 } - { y }
+1	{ 3 } - {  }
+1	{ SPACE } - { , }
+1	{ ; } - {  }
+1	{ n } - { t }
+1	{ z } - { s }
+1	{  } - { S }
+1	{ T } - {  }
+1	{ y } - { p }
+1	{ . } - { ^ }
+1	{ a } - { n }
+1	{ i } - { n }
+1	{ SPACE } - { b }
+1	{ b } - { i }
+1	{ R } - { d }
+1	{ 1 } - {  }
+1	{ 3 } - { 0 }
+1	{ x } - {  }
+1	{ s } - { L }
+1	{ n } - { u }
+1	{ P } - { p }
+1	{ o } - { a }
+1	{ d } - { e }
+1	{ ü } - { u }
+1	{  } - { COMBINING DIAERESIS }
+1	{  } - { L }
+1	{ P } - { o }
+1	{ i } - { m }
+1	{ i } - { d }
+1	{ z } - { c }
+1	{ T } - { r }
+1	{ m } - { u }
+1	{ n } - { i }
+1	{ 1 } - { S }
+1	{ 5 } - {  }
+1	{ d } - { r }
+1	{ s } - { n }
+1	{ e } - { 8 }
+1	{ v } - { r }
+1	{ d } - { o }
+1	{ F } - { S }
+1	{ u } - { y }
+1	{ É } - { E }
+1	{ q } - { g }
+1	{ G } - { C }
+1	{ r } - { h }
+1	{ u } - { o }
+1	{  } - { c }
+1	{ y } - { z }
+1	{ P } - {  }
+1	{ G } - { g }
+1	{  } - { t }
+1	{ f } - { s }
+1	{ SPACE } - { COMBINING ACUTE ACCENT }
+1	{ s } - { T }
+1	{ c } - { b }
+1	{ f } - { l }
+1	{ V } - { v }
+1	{ X } - { a }
+1	{ i } - { o }
+1	{ t } - { n }
+1	{ ~ } - { ^ }
+1	{ A } - { e }
+1	{ r } - { SPACE }
+1	{ m } - { e }
+1	{ a } - { d }
+1	{ SPACE } - { e }
+1	{ g } - { C }
+1	{ J } - { l }
+1	{ i } - { . }
+1	{ e } - { l }
+1	{ s } - { M }
+1	{ m } - { SPACE }
+1	{  } - { M }
+1	{ r } - { s }
+1	{ u } - { c }
+1	{ i } - { a }
+1	{ n } - { r }
+1	{ d } - { B }
+1	{ M } - {  }
+1	{ s } - { t }
+1	{ G } - {  }
+1	{ r } - { c }
+1	{ g } - { y }
+1	{ c } - { n }
+1	{ E } - { S }
+1	{ q } - { Q }
+1	{ A } - { a }
+1	{ õ } - { o }
+1	{  } - { o }
+1	{ õ } - {  }
+1	{ L } - { a }
+1	{ e } - { COMBINING GRAVE ACCENT }
+1	{ s } - { r }
+1	{ e } - { n }
+1	{ u } - { r }
+1	{ N } - { R }
+1	{ é } - { SPACE }
+1	{ J } - { O }
+1	{ a } - { i }
+1	{ SPACE } - { h }
+1	{ J } - { s }
+1	{ o } - { e }
+1	{ p } - { y }
+1	{ Q } - { q }
+1	{ P } - { l }
+1	{ o } - { l }
+1	{ y } - { u }
+1	{ e } - { E }
+1	{ 6 } - { 5 }
+1	{ O } - { B }
+1	{ v } - {  }
+1	{ s } - { c }
+1	{ . } - { t }
+1	{ E } - { C }
+1	{ , } - {  }
+1	{ e } - { t }
+1	{ C } - { L }
+1	{ o } - { O }
+
+Average accuracy: 93.85%, (stddev: 0.00)
