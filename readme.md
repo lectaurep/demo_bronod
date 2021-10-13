@@ -165,6 +165,10 @@ stage 17/∞  [####################################]  3049/3049          Accurac
 Moving best model demobronod_fs_nfd_12.mlmodel (0.287779673871824) to demobronod_fs_nfd_best.mlmodel
 ```
 
+![image](https://user-images.githubusercontent.com/33317799/137226904-1465ad46-e0b2-4acc-986e-35f4dd2bd722.png)
+
+
+
 ### Model trained by finetuning generic_lectau_26.mlmodel (ft)
 
 The initial model can be found here : [https://gitlab.inria.fr/dh-projects/kraken-models/master/transcription-models/generic_lectaurep_26.mlmodel](https://gitlab.inria.fr/dh-projects/kraken-models/-/raw/master/transcription%20models/generic_lectaurep_26.mlmodel)
@@ -309,6 +313,9 @@ stage 21/∞  [####################################]  3063/3063          Accurac
 
 Moving best model demobronod_ft_nfd_16.mlmodel (0.9610502610297881) to demobronod_ft_nfd_best.mlmodel
 ```
+
+![image](https://user-images.githubusercontent.com/33317799/137226790-a945e6e2-cdd8-4d39-a957-c6f3abf3f5c5.png)
+
 
 ## Evaluations
 
